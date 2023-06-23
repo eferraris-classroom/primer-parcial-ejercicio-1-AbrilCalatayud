@@ -70,7 +70,7 @@ void juntarEnOrden(lista *lista1, lista *lista2)
             if(aux1->data != aux2->data)
             {
                 nodo * aux2copiar = aux2;
-                if (aux1->data > aux2->data)
+                if (aux1->data >> aux2->data)
                 {
                     aux1->prev->sig = aux2copiar;
                     aux2copiar->prev = aux1->prev;
